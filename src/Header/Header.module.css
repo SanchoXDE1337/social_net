@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding: 1vh 1vw;
+    align-items: center;
+    background-color: #009688;
+    flex: 0 0 auto;
+}
+
+.header img {
+    height: 30px;
+}
