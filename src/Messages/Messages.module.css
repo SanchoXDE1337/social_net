@@ -1,0 +1,33 @@
+.messagePage {
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80vw;
+    align-items: stretch;
+    justify-content: space-around;*/
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center   ;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "dialogs messages";
+}
+
+.dialogs {
+    /*flex-grow: 1;*/
+    grid-area: dialogs;
+}
+
+.dialog {
+    padding: 20px;
+
+}
+
+.messages {
+    /*flex-grow: 2;*/
+    grid-area: messages;
+}
+
+.message {
+    padding: 20px;
+    background-color: #b9163b;
+}
