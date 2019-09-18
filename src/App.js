@@ -13,7 +13,7 @@ function App(props) {
             <Header/>
             <div className={"wrapper"}>
                 <NavBar/>
-                <Route path={"/profile"} component={Profile}/>
+                <Route path={"/profile"} render={() => <Profile state={props.state} addPost={props.addPost}/>}/>
                 <Route path={"/messages"} render={() => <Messages state={props.state.messagePage}/>}/>
                 <Route path={"/content"} component={Content}/>
             </div>

@@ -1,3 +1,5 @@
+import rerender from "../rerender";
+
 let state = {
     messagePage: {
         users: [
@@ -18,7 +20,22 @@ let state = {
             {id: 3, message: 'In'},
             {id: 4, message: 'Govne?'}
         ]
+    },
+    profilePage: {
+        posts: [
+            {id: 1, postMessage: 'Hello, React!', likesCount: 1337}
+        ]
     }
+};
+
+export let addPost = (message) => {
+    let newPost = {
+        id:228,
+        postMessage: message,
+        likesCount: 1337
+    };
+    state.profilePage.posts.unshift(newPost);
+    rerender();
 };
 
 export default state;

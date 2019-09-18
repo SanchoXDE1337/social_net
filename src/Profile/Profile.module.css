@@ -1,4 +1,52 @@
 .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     padding:20px;
     flex-grow: 10;
+    text-align: center;
+}
+
+.avatar img {
+    width: 200px;
+    height: 200px;
+}
+
+.post img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border: #b9163b solid 2px;
+    background-color: mediumseagreen ;
+    padding: 10px;
+    margin: 10px;
+}
+
+.likes {
+    align-self: flex-end;
+}
+
+.addPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+textarea {
+    display: inline-block;
+}
+
+button {
+    display: inline-block;
+    width: 80px;
+    height: 50px;
 }
